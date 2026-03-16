@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NATURALIMAGE (Sébastien Pastor – photographe naturaliste)</title>
+<meta name="description" content="Portfolio de Sébastien Pastor, photographe naturaliste : oiseaux, mammifères, flore, paysages et divers. Stages photo, tirages, calendriers et produits dérivés.">
+<meta name="keywords" content="photographie, nature, oiseaux, mammifères, flore, paysages, stages photo, tirages, calendriers, produits dérivés">
+<meta name="robots" content="index, follow">
+<style>
+body {margin:0; font-family:Arial,sans-serif; background:#0f1720; color:white;}
+header {padding:20px; text-align:center; background:#020617;}
+header h1 {font-size:3rem; margin:0; text-shadow:2px 2px 6px rgba(34,197,94,0.7);}
+header p {margin:5px 0;}
+nav {display:flex; justify-content:center; flex-wrap:wrap; gap:15px; margin-top:10px;}
+nav a {color:white; text-decoration:none; font-weight:bold;}
+.hero {height:50vh; display:flex; align-items:center; justify-content:center; background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://i.ibb.co/ynS8SJ9Q/FB-IMG-1773177359454.jpg") center/cover no-repeat;}
+section {max-width:1000px; margin:auto; padding:40px 20px;}
+.gallery {display:grid; grid-template-columns:repeat(2,1fr); gap:15px;}
+.photo-wrapper {display:flex; flex-direction:column;}
+.photo-wrapper img {width:100%; border-radius:12px; cursor:pointer; transition:transform .3s; object-fit:cover;}
+.photo-wrapper img:hover {transform:scale(1.05);}
+.photo-wrapper p {text-align:center; margin:5px 0 0; font-weight:bold;}
+.horizontal {grid-column:1 / span 2;}
+.vertical {height:auto;}
+#overlay {display:none; position:fixed; top:0; left:0; width:100%; height:100vh; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; cursor:pointer; z-index:9999;}
+#overlay img {max-width:95%; max-height:95%; border-radius:12px;}
+.card {background:#1e293b; padding:20px; border-radius:12px; text-align:center; border:2px solid #22c55e; margin-bottom:20px;}
+button {padding:10px 18px; border:none; border-radius:8px; background:#22c55e; color:white; cursor:pointer; margin-top:12px;}
+form input, form textarea {width:100%; padding:8px; margin-top:8px; border-radius:6px; border:none;}
+.filter-buttons {text-align:center; margin-bottom:20px;}
+.filter-buttons button {margin:5px; padding:8px 15px; border:none; border-radius:6px; background:#22c55e; color:white; cursor:pointer; font-weight:bold;}
+.filter-buttons button.active {background:#16a34a;}
+#backToTop {display:none; position:fixed; bottom:30px; right:30px; z-index:1000; background:#22c55e; color:white; border:none; border-radius:50%; padding:12px 16px; font-size:20px; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.3); transition: background 0.3s;}
+#backToTop:hover {background:#16a34a;}
+@media (max-width:600px){
+header{padding:15px 10px;}
+header h1{font-size:2.2rem;}
+header p{font-size:0.9rem;}
+.hero{height:35vh;}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>NATURALIMAGE</h1>
+<p>Sébastien Pastor – photographe naturaliste</p>
+<p>Capter la beauté de la nature sauvage</p>
+<nav>
+<a href="#portfolio">Portfolio</a>
+<a href="#stages">Stages</a>
+<a href="#shop">Boutique</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero"></div>
+
+<section id="portfolio">
+<h2>Portfolio</h2>
+<p style="text-align:center; margin-bottom:15px;">Toutes les photos du portfolio sont disponibles à la vente en tirages et/ou fichiers numériques.</p>
+<p style="text-align:center; margin-bottom:30px;">Pour plus d'infos ou commandes, utilisez le <a href="#contact">formulaire de contact</a>.</p>
+
+<!-- Boutons de filtrage -->
+<div class="filter-buttons">
+  <button class="filter-btn active" data-filter="all">Tout</button>
+  <button class="filter-btn" data-filter="oiseaux">Oiseaux</button>
+  <button class="filter-btn" data-filter="mammiferes">Mammifères</button>
+  <button class="filter-btn" data-filter="flore">Flore</button>
+  <button class="filter-btn" data-filter="paysages">Paysages</button>
+  <button class="filter-btn" data-filter="divers">Divers</button>
+</div>
+
+<h3>Oiseaux</h3>
+<div class="gallery">
+  <div class="photo-wrapper horizontal oiseaux"><img src="https://i.ibb.co/PsfpymJL/image1.jpg" alt="Oiseau 1"></div>
+  <div class="photo-wrapper horizontal oiseaux"><img src="https://i.ibb.co/0VQ0rk9T/image2.jpg" alt="Oiseau 2"></div>
+  <div class="photo-wrapper horizontal oiseaux"><img src="https://i.ibb.co/q3fCF5RC/IMG-20260313-WA0002.jpg" alt="Oiseau 3"></div>
+  <div class="photo-wrapper horizontal oiseaux"><img src="https://i.ibb.co/chng4Yr4/IMG-20260313-WA0003.jpg" alt="Oiseau 4"></div>
+  <div class="photo-wrapper vertical oiseaux"><img src="https://i.ibb.co/0pJMw2h0/IMG-20260313-WA0004.jpg" alt="Oiseau 5"></div>
+  <div class="photo-wrapper vertical oiseaux"><img src="https://i.ibb.co/yn7ZHZYP/IMG-20260313-WA0005.jpg" alt="Oiseau 6"></div><div class="photo-wrapper vertical oiseaux"><img src="https://i.ibb.co/XkvN74LQ/IMG-20260313-WA0020.jpg" alt="Oiseau 7"></div>
+  <div class="photo-wrapper vertical oiseaux"><img src="https://i.ibb.co/5hXwZ6MD/IMG-20260313-WA0019.jpg" alt="Oiseau 8"></div>
+  <div class="photo-wrapper horizontal oiseaux"><img src="https://i.ibb.co/MDG3QNsr/FB-IMG-1773408784391.jpg" alt="Oiseau 9"></div>
+  <div class="photo-wrapper horizontal oiseaux"><img src="https://i.ibb.co/NR0XRxH/IMG-20260313-WA0022.jpg" alt="Oiseau 10"></div>
+</div>
+<div class="photo-wrapper horizontal oiseaux">
+<img src="https://i.ibb.co/S4mz18Lg/IMG-20260315-WA0004.jpghttps://i.ibb.co/S4mz18Lg/IMG-20260315-WA0004.jpg" alt="Photo">
+</div>
+
+<h3>Mammifères</h3>
+<div class="gallery">
+  <div class="photo-wrapper horizontal mammiferes"><img src="https://i.ibb.co/NdKhyCNw/IMG-20260313-WA0008.jpg" alt="Mammifère 1"></div>
+  <div class="photo-wrapper horizontal mammiferes"><img src="https://i.ibb.co/zT37fspt/IMG-20260313-WA0007.jpg" alt="Mammifère 2"></div>
+  <div class="photo-wrapper horizontal mammiferes"><img src="https://i.ibb.co/5gN4VWyF/IMG-20260313-WA0006.jpg" alt="Mammifère 3"></div>
+  <div class="photo-wrapper horizontal mammiferes"><img src="https://i.ibb.co/B58hMbRn/IMG-20260313-WA0009.jpg" alt="Mammifère 4"></div>
+  <div class="photo-wrapper horizontal mammiferes"><img src="https://i.ibb.co/4RvWfJKv/IMG-20260313-WA0010.jpg" alt="Mammifère 5"></div>
+  <div class="photo-wrapper vertical mammiferes"><img src="https://i.ibb.co/S4JzXn78/FB-IMG-1773392609625.jpg" alt="Mammifère 6"></div>
+  <div class="photo-wrapper vertical mammiferes"><img src="https://i.ibb.co/tT5pg9Zy/IMG-20260313-WA0011.jpg" alt="Mammifère 7"></div>
+  <div class="photo-wrapper horizontal mammiferes"><img src="https://i.ibb.co/TMr9ZnfX/FB-IMG-1773386783158.jpg" alt="Mammifère 8"></div>
+</div>
+
+<h3>Flore</h3>
+<div class="gallery">
+  <div class="photo-wrapper vertical flore"><img src="https://i.ibb.co/Xx1R4QzQ/FB-IMG-1773365863559.jpg" alt="Flore 1"></div>
+  <div class="photo-wrapper vertical flore"><img src="https://i.ibb.co/j9tyRq3s/FB-IMG-1773367459134.jpg" alt="Flore 2"></div>
+  <div class="photo-wrapper vertical flore"><img src="https://i.ibb.co/0Vqy29MH/FB-IMG-1773367985379.jpg" alt="Flore 3"></div>
+  <div class="photo-wrapper vertical flore"><img src="https://i.ibb.co/bjTWwQTT/FB-IMG-1773386694572.jpg" alt="Flore 4"></div>
+  <div class="photo-wrapper vertical flore"><img src="https://i.ibb.co/Zz6kjBn3/FB-IMG-1773367960191.jpg" alt="Flore 5"></div>
+  <div class="photo-wrapper vertical flore"><img src="https://i.ibb.co/mCYfVRZw/IMG-20260313-WA0016.jpg" alt="Flore 6"></div>
+  <div class="photo-wrapper vertical flore"><img src="https://i.ibb.co/hxG88LSc/IMG-20260313-WA0012.jpg" alt="Flore 7"></div>
+  <div class="photo-wrapper vertical flore"><img src="https://i.ibb.co/0yZpym0F/IMG-20260313-WA0014.jpg" alt="Flore 8"></div>
+</div>
+<div class="photo-wrapper horizontal flore">
+<img src="https://i.ibb.co/20FrdK3Z/IMG-20260315-WA0002.jpghttps://i.ibb.co/20FrdK3Z/IMG-20260315-WA0002.jpg" alt="Photo">
+</div>
+
+<h3>Paysages</h3>
+<div class="gallery">
+  <div class="photo-wrapper vertical paysages"><img src="https://i.ibb.co/G3WPyrL5/FB-IMG-1773367976204.jpg" alt="Paysage 1"></div>
+  <div class="photo-wrapper vertical paysages"><img src="https://i.ibb.co/j12RdFC/FB-IMG-1773386734220.jpg" alt="Paysage 2"></div>
+  <div class="photo-wrapper vertical paysages"><img src="https://i.ibb.co/6c8nk14X/FB-IMG-1773367544848.jpg" alt="Paysage 3"></div>
+  <div class="photo-wrapper vertical paysages"><img src="https://i.ibb.co/tTPp5m4g/FB-IMG-1773386813204.jpg" alt="Paysage 4"></div>
+  <div class="photo-wrapper horizontal paysages"><img src="https://i.ibb.co/4wd5JC7y/FB-IMG-1773367925041.jpg" alt="Paysage 5"></div>
+  <div class="photo-wrapper horizontal paysages"><img src="https://i.ibb.co/QBC0Wqd/IMG-20260313-WA0013.jpg" alt="Paysage 6"></div>
+  <div class="photo-wrapper horizontal paysages"><img src="https://i.ibb.co/v4XB3k2k/FB-IMG-1773367385460.jpg" alt="Paysage 7"></div>
+</div>
+<div class="photo-wrapper horizontal paysages">
+<img src="https://i.ibb.co/4nN79XcL/IMG-20260315-WA0001.jpghttps://i.ibb.co/4nN79XcL/IMG-20260315-WA0001.jpg" alt="Photo">
+</div>
+
+<h3>Divers</h3>
+<div class="gallery">
+  <div class="photo-wrapper horizontal divers"><img src="https://i.ibb.co/TDYtmjTh/IMG-20260313-WA0017.jpg" alt="Divers 1"></div>
+  <div class="photo-wrapper vertical divers"><img src="https://i.ibb.co/SwLfF5bV/FB-IMG-1773367896032.jpg" alt="Divers 2"></div>
+  <div class="photo-wrapper vertical divers"><img src="https://i.ibb.co/XrxHWGpc/IMG-20260313-WA0015.jpg" alt="Divers 3"></div>
+  <div class="photo-wrapper horizontal divers"><img src="https://i.ibb.co/FbTw1DDK/FB-IMG-1773367938732.jpg" alt="Divers 4"></div>
+</div>
+</section>
+
+<!-- Overlay pour affichage des images en grand -->
+<div id="overlay"><img id="overlay-img"></div>
+
+<section id="stages">
+<h2>Stages</h2>
+<div class="card">
+<h3>Stages Photo Vautours</h3>
+<p><strong>Dates :</strong> 20 mars → 20 mai 2026</p>
+<p><strong>Lieu :</strong> Meyrueis - Lozère</p>
+<p><strong>Durée :</strong> 8h</p>
+<p><strong>Prix :</strong> 80€</p>
+<p>Pour plus d’informations et réservations, utilisez le <a href="#contact" class="contact-link">formulaire de contact</a>.</p>
+</div>
+<div class="card">
+<h3>Stages photo Sabots de Vénus</h3>
+<p><strong>Dates :</strong> 10 → 30 mai 2026</p>
+<p><strong>Lieu :</strong> Meyrueis - Lozère</p>
+<p><strong>Durée :</strong> 3h</p>
+<p><strong>Prix :</strong> 30€</p>
+<p>Pour plus d’informations et réservations, utilisez le <a href="#contact" class="contact-link">formulaire de contact</a>.</p>
+</div>
+</section>
+
+<section id="shop">
+<h2>Boutique</h2>
+<div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+<div class="card" style="flex:1; max-width:300px;">Calendriers<br><button>Commander</button></div>
+<div class="card" style="flex:1; max-width:300px;">Produits dérivés<br><button>Commander</button></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<form action="https://formspree.io/f/mjgayzvy" method="POST">
+<input type="text" name="Nom" placeholder="Nom" required>
+<input type="email" name="Email" placeholder="Email" required>
+<input type="text" id="objet" name="Objet" placeholder="Objet" required>
+<textarea name="Message" rows="4" placeholder="Message" required></textarea>
+<button type="submit">Envoyer</button>
+</form>
+<p><a href="https://facebook.com/Naturalimage.fr" target="_blank">Facebook</a></p>
+</section>
+
+<footer style="text-align:center; padding:20px; background:#020617">
+© 2026 NATURALIMAGE (Sébastien Pastor)
+</footer>
+
+<!-- Bouton retour en haut -->
+<button id="backToTop" title="Retour en haut">↑</button>
+
+<script>
+// ---------- OVERLAY IMAGE ----------
+const images = document.querySelectorAll(".gallery img");
+const overlay = document.getElementById("overlay");
+const overlayImg = document.getElementById("overlay-img");
+
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    overlay.style.display = "flex";
+    overlayImg.src = img.src;
+    document.body.style.overflow = "hidden";
+  });
+});
+
+overlay.addEventListener("click", () => {
+  overlay.style.display = "none";
+  overlayImg.src = "";
+  document.body.style.overflow = "";
+});
+
+document.addEventListener("keydown", e => {
+  if(e.key === "Escape") overlay.click();
+});
+
+images.forEach(img => { img.addEventListener("contextmenu", e => e.preventDefault()); });
+
+// ---------- FILTRAGE PORTFOLIO ----------
+const filterButtons = document.querySelectorAll('.filter-btn');
+const photoWrappers = document.querySelectorAll('.photo-wrapper');
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.getAttribute('data-filter');
+    photoWrappers.forEach(wrapper => {
+      wrapper.style.display = (filter === 'all' || wrapper.classList.contains(filter)) ? '' : 'none';
+    });
+  });
+});
+
+// ---------- BOUTON RETOUR EN HAUT ----------
+const backToTopBtn = document.getElementById("backToTop");
+window.onscroll = function() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// ---------- NUMÉROTATION AUTOMATIQUE DES PHOTOS ----------
+const categories = {
+  "oiseaux": "O",
+  "mammiferes": "M",
+  "paysages": "P",
+  "divers": "D",
+  "flore": "F"
+};
+
+Object.keys(categories).forEach(cat => {
+  let counter = 1;
+  document.querySelectorAll(`.photo-wrapper.${cat}`).forEach(wrapper => {
+    const label = document.createElement('p');
+    label.textContent = `Photo ${categories[cat]}-${counter}`;
+    wrapper.appendChild(label);
+    counter++;
+  });
+});
+</script>
+
+</body>
+</html>
